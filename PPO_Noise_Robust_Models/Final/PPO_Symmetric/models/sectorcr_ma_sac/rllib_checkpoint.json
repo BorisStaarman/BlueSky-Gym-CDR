@@ -1,0 +1,1 @@
+{"type": "Algorithm", "checkpoint_version": "1.1", "format": "cloudpickle", "state_file": "c:\\Users\\boris\\Documents\\bsgym\\bluesky-gym\\Noise\\Kalman\\Test_TwoStage_PPO_AM\\models\\sectorcr_ma_sac\\algorithm_state.pkl", "policy_ids": ["shared_policy"], "ray_version": "2.49.2", "ray_commit": "479fa716904109d9df4b56b98ca3c3350e1ec13c"}

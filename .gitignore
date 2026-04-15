@@ -1,0 +1,94 @@
+**/__pycache__/*
+.DS_store
+.vscode
+TODO.txt
+images/
+logs/
+/models/
+dist/
+
+# my own files that i dont want pushed
+boris_test_files/
+
+# alle csv files
+*.csv
+
+#  all metrics mappen
+metrics/
+metrics*/
+metrics_*/
+
+
+# dont push any of the big folders
+First_stage_AM/
+PPO/
+PPO_AM/
+Random/
+Noise_SAC/
+SAC/
+SAC_AM/
+Two_stage/
+/models/
+
+# Ignore everything in SAC_AM_PreTrain except the 2_4_6 folder
+SAC_AM_PreTrain/*
+!SAC_AM_PreTrain/2_4_5/
+# But ignore metrics and figures inside the kept folder
+SAC_AM_PreTrain/2_4_5/metrics/
+SAC_AM_PreTrain/2_4_5/figures/
+# Ignore everything in sectorcr_ma_sac, except for the two specific model files/folders
+SAC_AM_PreTrain/2_4_5/models/sectorcr_ma_sac/*
+!SAC_AM_PreTrain/2_4_5/models/sectorcr_ma_sac/rllib_checkpoint.json
+!SAC_AM_PreTrain/2_4_5/models/sectorcr_ma_sac/best_iter_23468_low_i/
+
+
+# Ignore everything in Two_stage_AM  except the 4_1_PPO folder
+Two_stage_AM/*
+!Two_stage_AM/4_1_PPO/
+# But ignore metrics and figures inside the kept folder
+Two_stage_AM/4_1_PPO/metrics/
+Two_stage_AM/4_1_PPO/figures/
+# Ignore everything in sectorcr_ma_sac, except for the two specific model files/folders
+Two_stage_AM/4_1_PPO/models/sectorcr_ma_sac/*
+!Two_stage_AM/4_1_PPO/models/sectorcr_ma_sac/rllib_checkpoint.json
+!Two_stage_AM/4_1_PPO/models/sectorcr_ma_sac/best_iter_00090/
+
+# ignore everything in Noise/Kalman except for the specific models we want to keep
+Noise/Kalman/*
+!Noise/Kalman/PPO_Symmetric_Kalman/
+!Noise/Kalman/PPO_Symmetric_Autoencoder/
+!Noise/Kalman/PPO_Assymetric/
+!Noise/Kalman/PPO_Symmetric/
+
+# ----------------- PPO_Symmetric_Kalman exclusions -----------------
+Noise/Kalman/PPO_Symmetric_Kalman/metrics/
+Noise/Kalman/PPO_Symmetric_Kalman/figures/
+Noise/Kalman/PPO_Symmetric_Kalman/figures_attention/
+Noise/Kalman/PPO_Symmetric_Kalman/models/sectorcr_ma_sac/*
+!Noise/Kalman/PPO_Symmetric_Kalman/models/sectorcr_ma_sac/best_iter_00118
+!Noise/Kalman/PPO_Symmetric_Kalman/models/sectorcr_ma_sac/rllib_checkpoint.json
+
+# ----------------- PPO_Symmetric_Autoencoder exclusions -----------------
+Noise/Kalman/PPO_Symmetric_Autoencoder/metrics/
+Noise/Kalman/PPO_Symmetric_Autoencoder/figures/
+Noise/Kalman/PPO_Symmetric_Autoencoder/figures_attention/
+Noise/Kalman/PPO_Symmetric_Autoencoder/models/sectorcr_ma_sac/*
+!Noise/Kalman/PPO_Symmetric_Autoencoder/models/sectorcr_ma_sac/best_iter_00130
+!Noise/Kalman/PPO_Symmetric_Autoencoder/models/sectorcr_ma_sac/rllib_checkpoint.json
+
+# ----------------- PPO_Assymetric exclusions -----------------
+Noise/Kalman/PPO_Assymetric/metrics/
+Noise/Kalman/PPO_Assymetric/figures/
+Noise/Kalman/PPO_Assymetric/figures_attention/
+Noise/Kalman/PPO_Assymetric/models/sectorcr_ma_sac/*
+!Noise/Kalman/PPO_Assymetric/models/sectorcr_ma_sac/best_iter_00111
+!Noise/Kalman/PPO_Assymetric/models/sectorcr_ma_sac/rllib_checkpoint.json
+
+# ----------------- PPO_Symmetric exclusions -----------------
+Noise/Kalman/PPO_Symmetric/metrics/
+Noise/Kalman/PPO_Symmetric/figures/
+Noise/Kalman/PPO_Symmetric/figures_attention/
+# keep the best training files
+Noise/Kalman/PPO_Symmetric/models/sectorcr_ma_sac/*
+!Noise/Kalman/PPO_Symmetric/models/sectorcr_ma_sac/best_iter_00086
+!Noise/Kalman/PPO_Symmetric/models/sectorcr_ma_sac/rllib_checkpoint.json
